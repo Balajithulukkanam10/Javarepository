@@ -1,0 +1,270 @@
+
+*************************************************************************************************
+Day 6 - 10/04/2024 
+Project
+	package1
+		InterfaceA
+		ClassA (Datatype/variables/methods)
+			ClassAA 
+			ClassAB
+		ClassB
+		ClassC
+	package2
+		ClassA
+		ClassB
+	package3
+		ClassX
+		ClassA
+		
+
+* Class - It does a set of work. It consist of variables and methods. Each work would be done by methods. 
+
+* Methods - It does specific job. It always written inside a class
+
+* Variable - it can have type(Data type) and posses a number or name;
+			variables can have different access - access Modifier
+			
+* Access Modifier - difines where we can use a variable/method/class
+
+* Interface - It contains rules most of the time. Sometimes it does some work too(means method).
+			Interface is always followed by class/classes. 
+			When class follows interface, class should do as per the rules written in the interface. Other than that
+			class can do its own work.
+
+* package - contains class/classes/interface/interfaces/file/files/folder/folders
+
+* Project - consist of package/packages/file/files/folder/folders/source(src)folder
+
+* static - static means belongs to the class. If govt hospital is class, 
+			then hospital receptionist is a static member of that class,
+			We can not seperate them 
+			variables and methods can be static
+			within a class - static can be used anywhere directly (in a static method or in non-static method)
+			Outside calss - static can be used but alone with class name. (in a static method or in non-static method)
+
+* Object (instatiation or initiation)  - E.g: Medical camp; 
+			We create Object only for classes; Whenever we create object we copy whatever the class contains(except static)
+			means, only non-static is copied
+			Through object we can not call static things.
+
+* Constructor - Object creation happens with the help of constructor
+				constructor is available in different kind
+				1. without any money/permission
+				2. only with money
+				3. only with permission
+				4. with both money and permission
+				
+				
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Class - important thing, through which we perform some task. Class may contains methods and variables
+
+Method1 - A work
+Method2 - B work
+Method3 - C work ( A work + some other work = method1 + some other work)
+
+redundant - repeatable 
+reuse
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Variables - shape and count/name
+shape - datatype 
+
+Datatype: Its a classification of a data, which tells the compiler or interpretor about how the programmer intends to use the data.
+
+1) Primitive
+	a) boolean - yes or no OR true or false 
+	b) Textual 
+		char - a, b, c, A, B
+		byte - 
+			byte x = 10;
+	c) numeric 
+		int 
+		short
+		double
+		long
+		float
+
+2) Non Primitive
+	d) String 
+	e) array
+
+each datatype has a default value
+
+* default value of String is null
+* default value of int is 0
+* boolean - false
+
+How we declare variable
+Syntax = accessModifier dataType variableName/variable = variableValue (non static)
+Syntax = accessModifier static dataType variableName/variable = variableValue (static)
+
+int a = 10;  
+int a;
+a = 10;
+String a = "10";
+String a; (this line and next line are same)
+String a = null; (null is a keyword here, it means String a has nothing.)
+String a = "null"; ("null" is a String/word here.)
+double a = 10d;
+char sathya = 'A';
+boolean Boolean = true;
+
+int a; - declare
+a = 10; - define/initiate
+
+int a = 10;
+int - data type( primitive --> numeric)
+a - variable/variableName;
+10 - value posses by the variable/ value pointed by the variable
+If you want 10, you need to call 'a' only. 
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+Variables - Its a memory location that can hold values of a specific datatype.
+
+Types of variables 
+1. Local variable - 
+	* Datatype declared/initiated within a method/constructor, for, if    -- block ({...})
+	* scope of local variable is only within the block in which the variable is declared
+	* intialisation of local variable is madatory
+	* local variables can not be static
+	{
+	int a = 10;
+	char c;
+	c = 20;
+	String sathya = "10";
+	static int b = 10; -- we can not create like this.
+	}
+	
+2. Instance variable/class variable/non-static variable
+	* Declared within a class but outside of a block ({...})
+	* Non- static variables
+	* To access instance variables, we need to create object
+	
+	classA {
+	int a = 10; //class level non static variable
+	String sathya = "10"; //class level non static variable
+	
+	method1() {
+	int  a = 10; // local variable
+	
+	sysout(sathya); // we can not use a non static like this. we need to create object
+	// it should be written as 
+	ClassA obj = new ClassA(); //object creation
+	sysout(obj.sathya);
+	}
+	}
+	
+	
+3. static variable
+	* Declared within a class but outside of a block
+	* static keyword is used with variables and methods
+	* To access this variable, dont need to create an object
+	* within a class - static can be used anywhere directly (in a static method or in non-static method)
+	* Outside class - static can be used but along with class name. (in a static method or in non-static method)
+	
+	static int a = 10;
+	static String sathya = "10";
+	
+	ClassA (TalukOffice) {
+
+static int a = 10;
+//a = receptionist;
+
+method1() {
+
+print (a);
+
+
+}
+
+}
+
+
+ClassB (Govt hospital) {
+
+method2() {
+print (ClassA.a);
+//print (TalukOffice.receptionist)
+}
+	
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	
+Access Modifier
+	* It defines where and who can use a method/variable/class
+	1) default
+	2) private
+	3) protected
+	4) public 
+	
+	Syntax = accessModifier dataType variableName/variable = variableValue
+		   = static accessModifier dataType variableName/variable = variableValue 
+	int a = 10; - default (no need to mention "default" word
+	private int a = 10;
+	protected int a = 10;
+	public int a = 10;
+	
+	
+	packageA
+		classA ( int a = 10)
+			ClassAA (same package and sub class of A)
+		classB (same package but non sub class of A)
+	packageX
+		classX (diff package non sub class of ClassA)
+		classXA (diff package but sub class of A)
+		
+	
+How other ClassA and other Classes can use variable 'a' based on its access modifier.
+
+                                     | default |  private  | protected  | public 
+									 |         |           |            | 
+classA ( int a = 10)                 | yes     | yes       | yes        | yes
+									 |         |           |            |
+same package but sub class           | yes     | no        | yes        | yes 
+									 |         |           |            |
+same package but non sub class       | yes     | no        | yes        | yes
+									 |         |           |            |
+different package but sub class      | no      | no        | yes        | yes
+									 |         |           |            |
+different package but non sub class  | no      | no        | no         | yes
+
+ClassA {
+
+int a = 10;
+private int b = 100;
+protected int c = 20;
+public int d = 15
+
+method1() {
+print (a); - No compile time error
+print (b);
+print (c);
+print (d); 
+}
+
+}
+
+ClassAA following ClassA{
+
+ClassA obj = new ClassA();
+method1() {
+print (obj.a); 
+print (obj.b);
+print (obj.c);
+print (obj.d); 
+}
+}
+
+ClassB {
+
+ClassA obj = new ClassA();
+method1() {
+print (obj.a); 
+print (obj.b);
+print (obj.c);
+print (obj.d); 
+}
+}
