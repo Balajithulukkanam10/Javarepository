@@ -1,3 +1,28 @@
+Day 1: 
+Eclipse introduction 
+why Git used
+Git concepts
+Eclipse shortcuts
+*************************************************************************************************
+
+Day 2:
+Eclipse perspective
+Properties 
+Eclipse walkthrough 
+*************************************************************************************************
+
+Day 3:
+Creating a Java project and Maven project 
+Pushing it to Git
+Import from GIT 
+Pull and push concepts 
+*************************************************************************************************
+
+Day 4:
+Java introduction
+explanation about project, package, class, method, constructors
+why object creation
+Public and static keywords
 
 *************************************************************************************************
 Day 6 - 10/04/2024 and Day 7 - 11/04/2024
