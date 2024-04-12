@@ -1,6 +1,6 @@
 
 *************************************************************************************************
-Day 6 - 10/04/2024 
+Day 6 - 10/04/2024 and Day 7 - 11/04/2024
 Project
 	package1
 		InterfaceA
@@ -122,6 +122,7 @@ If you want 10, you need to call 'a' only.
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 
+Day 8 - 12/04/2024
 
 Variables - Its a memory location that can hold values of a specific datatype.
 
@@ -191,18 +192,21 @@ print (ClassA.a);
 //print (TalukOffice.receptionist)
 }
 	
-&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+*********************************************************************
 	
 Access Modifier
-	* It defines where and who can use a method/variable/class
+	* It defines where and who can use a method/variable/class/interface
 	1) default
 	2) private
 	3) protected
 	4) public 
 	
-	Syntax = accessModifier dataType variableName/variable = variableValue
-		   = static accessModifier dataType variableName/variable = variableValue 
-	int a = 10; - default (no need to mention "default" word
+	static & final 
+	
+	Syntax for variable = 		 accessModifier dataType variableName/variable = variableValue
+		   				= static accessModifier dataType variableName/variable = variableValue 
+	
+	int a = 10; - default (no need to mention "default" word)
 	private int a = 10;
 	protected int a = 10;
 	public int a = 10;
@@ -210,14 +214,14 @@ Access Modifier
 	
 	packageA
 		classA ( int a = 10)
-			ClassAA (same package and sub class of A)
+			ClassAA extends ClassA (same package and sub class of A)
 		classB (same package but non sub class of A)
 	packageX
 		classX (diff package non sub class of ClassA)
-		classXA (diff package but sub class of A)
+		classXA extends ClassA (diff package but sub class of A)
 		
 	
-How other ClassA and other Classes can use variable 'a' based on its access modifier.
+How ClassA and other Classes can use variable 'a' based on its access modifier.
 
                                      | default |  private  | protected  | public 
 									 |         |           |            | 
@@ -247,7 +251,7 @@ print (d);
 
 }
 
-ClassAA following ClassA{
+ClassAA following ClassA {
 
 ClassA obj = new ClassA();
 method1() {

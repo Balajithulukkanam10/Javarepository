@@ -6,6 +6,13 @@ public class ClassesAndMethods {
 
 	public String str = "1";
 	static char character = 'a';
+	
+//	Non static method Syntax = accessModifier returnType methodName() { }
+//	 	static method Syntax = static accessModifier returnType methodName() { }
+	
+//	As of now we only deal with two kind of methods
+//		1. static method
+//		2. non static method
 
 	public static void main(String[] args) {
 		int a = 10;

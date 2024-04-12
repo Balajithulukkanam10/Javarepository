@@ -11,13 +11,13 @@ public class CreatingClasses {
 		
 	}
 	
-//	private Test4 {
-//		
-//	}
-//	
-//	protected Test5 {
-//		
-//	}
+	private class Test4 {
+		
+	}
+	
+	protected class Test5 {
+		
+	}
 
 }
 
