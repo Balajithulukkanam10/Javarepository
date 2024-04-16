@@ -1,6 +1,7 @@
 package basicsOfJava;
 
 public class ObjectCreation {
+//public class ObjectCreation extends Object {
 	
 //	* Java is a Object Oriented Programming language.
 //	* But its not 100% OOPs language.
@@ -10,7 +11,7 @@ public class ObjectCreation {
 //	* Object class also, contains methods and variables 
 //	* Whenever we want to use non static variables/methods, we need to create object for the
 //		respective class.
-//	* We call it as Object intantiation or Object creation
+//	* We call it as Object instantiation or Object creation
 //	* We create object only for classes
 //	* Syntax for object creation
 //		ReferenceClassName ObjectVariableName = new ConstructorOfClassForWhichWewantToCreateObject();
@@ -54,6 +55,7 @@ public class ObjectCreation {
 //		public float price = 75.35f;
 		
 		ObjectCreation obj = new ObjectCreation();
+//		obj.
 //		obj.a = 20;
 //		obj.a;
 //		Object

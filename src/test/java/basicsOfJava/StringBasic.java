@@ -1,6 +1,6 @@
 package basicsOfJava;
 
-//* Sequence of character (Basic Explanation)
+//* String is "Sequence of character" (Basic Explanation)
 //* In Java, It is array of character
 //* In Java, String is a non- primitive data type
 //* In Java String is a Class also
