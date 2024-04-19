@@ -1,6 +1,6 @@
 package basicsOfJava;
 
-import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -52,8 +52,8 @@ public class ReturnBasics {
 //		int b = a +10; it is nothing but 
 		int b = c + 10;
 		
-		WebDriver driver = new ChromeDriver();
-		WebElement userName = driver.findElement(By.id(""));
+//		WebDriver driver = new ChromeDriver();
+//		WebElement userName = driver.findElement(By.id(""));
 		
 	}
 	
