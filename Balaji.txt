@@ -561,6 +561,7 @@ Based on where we create our data types or variable names, we categories variabl
 3. static variable
 
 ****************************************************************************************
+Day 10 - 16/04/2024
 
 Methods in Java
 1) method without return type //public void 
@@ -580,5 +581,12 @@ METHODS CAN BE:
 245 // public non-static RETURNTYPE methodName(datatype variableName)
 246 // public non-static RETURNTYPE methodName()
 
+************************************************************
+
+Day 11 - 19/04/2024
+
+Return type in detail
+
+***************************************************************
 
 

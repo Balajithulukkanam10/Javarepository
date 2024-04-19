@@ -1,5 +1,6 @@
 package basicsOfJava;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -138,22 +139,29 @@ class Test {
 		test.takeMoneyFromATM(100);
 		
 		WebDriver driver = new ChromeDriver();
-//		driver.findElement(By);
+		driver.findElement(By.xpath("").id(""));
 		
 //		SuperMarket abc = new SuperMarket();
 //		test.buyThings(abc.buyFruits(100));
 //		test.buyThings(new SuperMarket().buyFruits(100));
 
+//		SuperMarket object1 = SuperMarket.buyRice(10);
+//		test.buyThings(object1);
 		test.buyThings(SuperMarket.buyRice(10));
-		test.buyThings(SuperMarket.buyFruits(200));
-
+//		test.buyThings(SuperMarket.buyRice(10).buyRice(20));
+//		test.buyThings(SuperMarket.buyFruits(200)); 
+//		Above line is nothing but 
+//		test.buyThings(void); 
 	}
 
 
 public static class SuperMarket {
 
-	public static void buyRice(int quantity) {
+	public static SuperMarket buyRice(int quantity) {
+		
+		SuperMarket obj = null;
 
+		return obj;
 	}
 
 	public static void buyFruits(int amount) {

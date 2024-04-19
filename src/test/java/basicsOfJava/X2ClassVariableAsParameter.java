@@ -20,9 +20,13 @@ public class X2ClassVariableAsParameter {
 		
 		Examples.giveAmount(b);
 		Examples.callAPerson(str1);
+		
+//		Examples.giveAmount(c);
 	}
 	
 	public void giveAmount(int amount) {
+		int c = 30;
+		System.out.println("Give "+c+ " rupees to Sathya");
 		System.out.println("Give "+amount+ " rupees to Sathya");
 	}
 	

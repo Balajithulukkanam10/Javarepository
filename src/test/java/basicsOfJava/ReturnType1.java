@@ -1,5 +1,12 @@
 package basicsOfJava;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Options;
+import org.openqa.selenium.WebDriver.Window;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class ReturnType1 {
 	
 	public static void main(String[] args) {
@@ -58,6 +65,13 @@ public class ReturnType1 {
 		return balance;
 	}
 	
+	public int buySoapAndGiveBalanceAmount2(int givenAmount12, int soapAmount) {
+//		int balance = givenAmount - soapAmount;
+		int balance = buy10RupeesSoap(givenAmount12) - soapAmount;
+		System.out.println("Balance amount is "+balance);
+		return balance;
+	}
+	
 	public String buySoapAndGiveSoapBack(int givenAmount, int soapAmount) {
 //		int balance = givenAmount - soapAmount;
 //		System.out.println("Balance amount is "+balance);
@@ -67,6 +81,22 @@ public class ReturnType1 {
 		return soapName;
 	}
 	
+	public void example() {
+	WebDriver driver = new ChromeDriver();
+	driver.findElement(By.id("abc")).click();
+	
+	By AA = By.id("abc");
+	WebElement BB = driver.findElement(AA);
+	BB.click();
+	
+	driver.manage().window().maximize();
+	
+	WebDriver driver1; 
+	driver = new ChromeDriver();
+	Options opt = driver.manage();
+	Window win = opt.window();
+	win.maximize();
+	}
 	
 	
 }
