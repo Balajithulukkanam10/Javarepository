@@ -589,4 +589,25 @@ Return type in detail
 
 ***************************************************************
 
+Note: teach final keyword and how we use it in a Class
+
+Day 12 - 20/04/2024
+
+interfaceInJava
+
+1) method with body  (Concrete method)
+2) method without body 
+
+Methods starts with { and ends with }
+
+Method with body or concrete method 
+Ex: public void method1() {
+
+}
+
+Methods can be without body or bodyless method or abstract method
+Ex: public void method1();
+
+
+
 
