@@ -591,7 +591,7 @@ Return type in detail
 
 Note: teach final keyword and how we use it in a Class
 
-Day 12 - 20/04/2024
+Day 12 - 21/04/2024
 
 interfaceInJava
 
@@ -607,6 +607,79 @@ Ex: public void method1() {
 
 Methods can be without body or bodyless method or abstract method
 Ex: public void method1();
+
+*********************************************************************
+
+Day 13 - 23/04/2023
+
+* Interface examples -> WebDriver, WebElement, List
+* Interface as a return type --> List<WebElement> findElements(By by))
+* Class as a parameter  --> findElement(By by) ;
+
+driver.findElement(By.id("text")).click();
+
+WebElement.click();
+
+
+driver.findElement(By.xpath("")).isSelected();
+
+WebElement(Gender checkbox).isSelected();
+
+
+driver.switchTo().window(); //TargetLocator.window();
+driver.switchTo().alert();
+driver.switchTo().frame();
+
+
+
+driver.switchTo().alert().accept();
+
+
+TargetLocator.alert().accept();
+
+Alert.accept();
+
+Alert alert = driver.switchTo().alert();
+alert.accept():
+
+
+TargetLocator var = driver.switchTo();
+Alert alert = var.alert();
+alert.accept();
+
+TargetLocator var = driver.switchTo();
+Alert alert = var.alert();
+String str = alert.getText();
+syso(str); --> No benefits selected
+
+driver.switchTo().alert().getText();
+
+
+driver.switchTo().alert().accept();
+
+
+public int method1() {
+
+}
+
+int variableName = obj.method1();
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+Abstract class  in detail
+
+
+*&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Whenever you study a new concept, in that concept include previously studied concepts
+
+If you are studying abstract class, then in that concept, you need check how the below things works
+Variables
+methods (static or non static / parameterized or not / with or without return type)
+Object 
+Interface
+
 
 
 
