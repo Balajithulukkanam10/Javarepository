@@ -1,7 +1,7 @@
 package mainpackage;
 
 
-public class ReturnType {
+public class ReturnType implements InterfaceLearning {
 	
 //	static String str;
 //	static String str1 = "new";
@@ -60,5 +60,29 @@ public class ReturnType {
 		System.out.println(xx);
 		System.out.println(test);
 		return abc;
+	}
+
+	@Override
+	public void method1() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String Method2() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void method3(String str, int a) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String Method4(String str1, int b) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

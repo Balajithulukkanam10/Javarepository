@@ -2,9 +2,13 @@ package mainpackage;
 
 public interface InterfaceLearning {
 
-	public interface NewMethod{}
+	public interface NewMethod{
+		
+	}
 
-	interface NextMethod{}
+	interface NextMethod{
+		
+	}
 	
 //	private interface NoBody{}
 //	
