@@ -19,6 +19,7 @@ public class LearnInheritance implements InheritanceInterface1{
 //			a) ClassA extends ClassB, ClassC, etc... 
 //		2) is possible by using interfaces alone.
 //			a) ClassA implements interface1, interface2, etc..
+//			b) InterfaceA extends interface1, interface2, etc..
 //		3) is possible by using classes and interface together. In this case, class name should be mentioned at first
 //			a) ClassA extends ClassB implements interface1, interface2, interface3
 //			b) ClassA implements interface1, interface2 extends ClassB - THIS IS NOT RIGHT ORDER TO WRITE
@@ -56,11 +57,11 @@ public class LearnInheritance implements InheritanceInterface1{
 //		InheritanceInterface1 obj1 = new InheritanceInterface1();
 		
 		LearnInheritance obj2 = new LearnInheritance();
-		obj2.interfaceMethod1();
-		obj2.interfaceMethod2();
-		obj2.testMethod1();
+		obj2.interfaceMethod1(); //Parent interface's overriden method
+		obj2.interfaceMethod2(); // Parent interface's method
+		obj2.testMethod1();	// Child class method
 		
-		InheritanceInterface1.interfaceMethod3();
+		InheritanceInterface1.interfaceMethod3(); //Parent interface's static method. So we called in static way.
 		
 		Exception obj1 = new Exception();
 		Exception obj12;

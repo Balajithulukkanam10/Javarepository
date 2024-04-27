@@ -610,7 +610,7 @@ Ex: public void method1();
 
 *********************************************************************
 
-Day 13 - 23/04/2023
+Day 13 - 23/04/2024
 
 * Interface examples -> WebDriver, WebElement, List
 * Interface as a return type --> List<WebElement> findElements(By by))
@@ -681,6 +681,14 @@ Object
 Interface
 
 
+*************************************************************
 
+Day 14 - 27/04/2024
+
+Inheritance in detail
+Polymorphism in detail
+	* Method overload or compile time polymorphism
+	* Method override or run time polymorphism
+	
 
 
