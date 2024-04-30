@@ -19,7 +19,10 @@ public class OverloadingDemo1 {
 	float f;
 	double d;
 	long l;
-
+	
+	public OverloadingDemo1() {
+		
+	}
 	public void buySoap() {
 		System.out.println("Buy soap public method");
 	}
