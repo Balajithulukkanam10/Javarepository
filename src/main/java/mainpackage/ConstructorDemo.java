@@ -24,6 +24,7 @@ public class ConstructorDemo extends ContsructorExtends {
 		
 		ConstructorDemo obj1 = new ConstructorDemo();
 		System.out.println("ConstructorDemo");
+		method();
 		ContsructorExtends obj2 = new ConstructorDemo();
 //		obj2.method();
 		ContsructorExtends.method();
@@ -35,6 +36,9 @@ public class ConstructorDemo extends ContsructorExtends {
 		
 		public ContsructorExtends() {
 			System.out.println("Constructor from parent class");
+		}
+		public ContsructorExtends(int a) {
+			
 		}
 		
 		 static void method() {

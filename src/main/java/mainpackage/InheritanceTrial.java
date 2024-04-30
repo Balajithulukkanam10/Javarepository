@@ -1,22 +1,32 @@
 package mainpackage;
 
-public class InheritanceTrial {
-	int a = 10;
+public class InheritanceTrial extends Test{
+	int b = 10;
 	String Str = "Class Variable";
 	
 	public static void main(String[] args) {
 		 InheritanceTrial obj = new InheritanceTrial();
-		NewMeth2("Method");
-//		obj.method1();
+//		NewMeth2("Method");
+//		super.method1();
 		obj.newMeth1();
+//		super.meth4();
+		
 	}
-	 void method1() {
-
+	 public void method1() {
+		 System.out.println("this is child class method");
 	} 
-	 int newMeth1() {
-		 System.out.println("non static method");
-		 return 1;
-		 
+	 public void newMeth1() {
+		 Test obj1 = new InheritanceTrial();
+//			NewMeth2("Method");
+		 	this.method1();
+		 	obj1.method1();
+			super.method1();
+			System.out.println(this.b);
+			System.out.println(super.b);
+			
+//			obj.newMeth1();
+//			super.meth4();
+			
 		 	}
 	 static String NewMeth2(String abc) {
 		
@@ -26,4 +36,16 @@ public class InheritanceTrial {
 	 void MethodwithoutBody() {
 		 
 	 }
+}
+
+ class Test{
+	 int b = 20;
+	 public void method1() {
+		 System.out.println("this is parent class method");
+		 
+	 }
+	public void meth6() {
+		
+	}
+	
 }
