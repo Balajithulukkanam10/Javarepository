@@ -1,6 +1,6 @@
 package mainpackage;
 
-public class FinalKeyword extends ParentNewClass{
+public class FinalKeyword extends ParentNewClass {
 	final int b = 20;
 	int a = 10;
 //	final int c;
@@ -17,17 +17,29 @@ public class FinalKeyword extends ParentNewClass{
 		obj.method1();
 	}
 
-	void method1() {
+	public void method1() {
 		a = 20;
 //		b = 30;
 		System.out.println("method from child class");
 	}
 
+	public void method2() {
+
+	}
+
 }
 
-class ParentNewClass {
+class ParentNewClass extends FinalParentClass{
 
-	void method1() {
+	public void method1() {
 		System.out.println("method from parent class");
 	}
+
+	final public void method2() {
+
+	}
+}
+
+final class FinalParentClass{
+	
 }
