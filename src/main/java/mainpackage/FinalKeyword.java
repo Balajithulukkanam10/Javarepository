@@ -35,11 +35,11 @@ class ParentNewClass extends FinalParentClass{
 		System.out.println("method from parent class");
 	}
 
-	final public void method2() {
+	public void method2() {
 
 	}
 }
 
-final class FinalParentClass{
+class FinalParentClass{
 	
 }
