@@ -13,11 +13,11 @@ public class ExceptionPractice {
 //			System.out.println("1111");
 		
 		try {
-//		int c = a/b;
-//		System.out.println(c);
+		int c = a/b;
+		System.out.println(c);
 			
-			if(str.equals("Hello"))
-				System.out.println("1111");
+//			if(str.equals("Hello"))
+//				System.out.println("1111");
 		}
 		
 //		catch(Exception e) {
