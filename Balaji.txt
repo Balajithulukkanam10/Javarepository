@@ -708,7 +708,16 @@ Keywords in java
    static
 
 *************************************************************
+Day 17 - 01/05/2024
 
+Errors and Exceptions 
+
+try catch finally
+
+*************************************************************
+Day 18 - 07/05/2024
+
+Throw, Throws, Throwable
 
 
 
