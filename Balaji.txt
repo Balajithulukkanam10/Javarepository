@@ -719,6 +719,226 @@ Day 18 - 07/05/2024
 
 Throw, Throws, Throwable
 
+************************************************************
+1) 
+if(hasHamamSoap) --> Yes or not
+
+yes - buy Hamam soap
+No - return to home
+
+
+2) 
+if(hasHamamSoap) --> Yes or not
+
+yes - buy Hamam soap
+No - return to home
+
+if(hasLuxSoap) --> Yes or not
+
+yes - buy Lux soap
+No - return to home
+
+3) 
+if(hasHamamSoap) --> Yes 
+
+yes - buy Hamam soap
+
+No - buy Lux soap
+
+else
+	buy Lux Soap
+	
+
+4) 
+if(hasHamamSoap) --> Yes or no
+
+yes - buy Hamam soap
+
+
+else 
+if(hasCintholSoap) --> Yes or no
+
+yes - buy Cinthol soap
+
+else 
+	buy any Soap or buy Lux soap
+	
+5) 
+
+if(hasHamamSoap) --> Yes or no
+	
+	if(has10RupeesHamamSoap) --> Yes or no
+	if(has20RupeesHamamSoap) --> Yes or no
+	
+6) 
+
+if(hasHamamSoap) --> Yes or no
+
+	if(has10RupeesHamamSoap) --> Yes or no
+	else 
+	buy any amount soap
+	
+7) 
+if(hasHamamSoap) --> Yes or no
+
+	if(has10RupeesHamamSoap) --> Yes or no
+	else
+	if(has20RupeesHamamSoap) --> Yes or no
+	else 
+	buy any amount soap
+
+
+8) 
+
+if(hasHamamSoap && has10RupeesHamamSoap) --> Yes or no
+	both condition has to pass - then enter the shop
+	
+9)
+
+if(hasHamamSoap || hasLuxSoap) --> Yes or no
+	any one condition pas pass - then enter the shop
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+1) 
+if(condition) {
+	line1
+	line2
+	}
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+if(condition) 
+	line1 - belongs if condition
+	line2
+	
+
+2) 
+if(condition) {
+
+}
+if(condition) {
+
+}
+
+3)
+if(condition) {
+
+}
+
+else {
+
+}
+
+4) 
+
+if(condition) {
+
+}
+
+else 
+if (condition) {
+
+}
+
+else {
+
+}
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+if(condition), where condition - should return boolean(true or false)
+Conditional operators  
+10 == 20 ; = assignment operator
+10 != 20
+10 > 20
+10 < 20
+10 <= 20
+10 >= 20
+
+int a = 10;
+int b = 20;
+if(a>b) {
+
+}
+
+public int method1() {
+
+return 10;
+}
+
+if(10 != method1()) {
+
+}
+-----------------------------------------------
+
+
+condition only
+
+==
+>
+<
+!=
+
+
+if
+
+if 
+if 
+if
+
+if
+else
+
+
+if
+else if 
+else if
+else 
+
+
+---------------------------
+
+multiple condition
+
+
+&&
+|| 
+
+
+if(condition1 || condition2) {content }
+if(condition1 && condition2) {content }
+if(condition1 && (condition2 || condition3)) {content }
+
+
+
+
+
+
+
+if(soap available == yes)
+	doing some other work
+	if(soap name == yes)
+	doing some other work
+		if(soap amount is 10 == yes)
+			buy soap
+
+if(soap available == yes && soap name == yes && soap amount is 10 == yes) 
+	buy soap
+
+
+
+if(condition) {
+line1
+line2
+line3
+}
+
+if(condition) 
+line1
+line2
+line3
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
 
 
 

@@ -36,7 +36,7 @@ public class Throws {
 		
 		
 		public static void test() throws IOException {
-			throw new IOException();
+//			throw new IOException();
 			
 //			System.out.println("");
 
