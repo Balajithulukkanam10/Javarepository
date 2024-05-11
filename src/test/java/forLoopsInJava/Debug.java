@@ -8,6 +8,12 @@ public class Debug {
 	public void method1() {
 		int b = 10 +1; 
 	}
+	
+//	public static void main(String[] args) {
+//		for (int i = 1; i <= 5; i++) {
+//			System.out.println("aaa");
+//		}
+//	}
 
 	public static void main(String[] args) {
 		

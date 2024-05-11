@@ -1,4 +1,4 @@
-package ifLoop;
+package forLoopsInJava;
 
 
 
@@ -71,7 +71,7 @@ package ifLoop;
 //syso(temp)
 
 
-public class ForEach {
+public class ForEach1 {
 
 	public static void main(String[] args) {
 		
