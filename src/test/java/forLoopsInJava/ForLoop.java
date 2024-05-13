@@ -1,9 +1,9 @@
-package myPackage;
+package forLoopsInJava;
 
 public class ForLoop {
 
 	public static void main(String[] args) {
-		forWithBreakContinueKeyword();
+		method2(5);
 
 	}
 
@@ -178,5 +178,12 @@ public class ForLoop {
 			System.out.println(i);
 		}
 	}
+	
+	public static void method2(int count) {
+		for (int i = 1; i <= count; i++) {
+			System.out.println(i);
+		}
+	}
+	
 
 }
