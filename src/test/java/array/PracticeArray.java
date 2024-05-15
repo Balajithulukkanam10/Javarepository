@@ -1,6 +1,6 @@
-package Dummy;
+package array;
 
-public class Practice {
+public class PracticeArray {
 
 	public static void main(String[] args) {
 		int a = 10;
@@ -58,15 +58,33 @@ public class Practice {
 //			System.out.println(clonedArray[i]);
 //		}
 		
-		Practice obj = new Practice();
+		PracticeArray obj = new PracticeArray();
 		obj.printIntArray(arr1);
 		
-		
+		obj.printIntArrayUsingForEach(arr1);
 	}
 	
 	public void printIntArray(int[] myArray) {
 		for(int i = 0; i<myArray.length; i++) {
 			System.out.println(myArray[i]);
+		}
+	}
+	
+	public void printIntArrayUsingForEach(int[] arrName) {
+		for(int each: arrName) {
+			System.out.println(arrName);
+		}
+	}
+	
+	public void printStringArray(String[] myArray) {
+		for(int i = 0; i<myArray.length; i++) {
+			System.out.println(myArray[i]);
+		}
+	}
+	
+	public void printStringArrayUsingForEach(String[] arrName) {
+		for(String each: arrName) {
+			System.out.println(arrName);
 		}
 	}
 	

@@ -43,7 +43,7 @@ public class ForEach {
 //		That time we can not use normal for loop. We could use forEach only.
 //* 
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < onePlus.length; i++) {
 			System.out.println(onePlus[i]);
 		}
 

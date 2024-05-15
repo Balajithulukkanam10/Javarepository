@@ -5,59 +5,36 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class Test extends Parent {
+public class Test {
+	
+	private int a = 10;
 
-	public Test(int a) {
-		super(a);
-		System.out.println("I am int parameterzied constructor from Test class");
+	public int getA() {
+		return a;
 	}
 
-	public Test() {
-//		super(); //superOf
-		System.out.println("I am default constructor from Test Class");
-//		super();
+	public void setA(int a) {
+		this.a = a;
 	}
+	
+}
 
-	public Test(String str) {
-//		super();
-		super(0d);
-		System.out.println("I am String parameterzied constructor from Test class");
-	}
 
+class Test1 {
+	int aa = 0;
 	public void method1() {
-		System.out.println("I am a non static method");
+//		System.out.println(a);
+		Test test = new Test();
+		test.getA();
+		
+		int c = test.getA();
+		aa = test.getA();
 	}
-
-	public void method2(int a) {
-		System.out.println("I am int parameterized method");
-	}
-
-	public static void main(String[] args) {
-//		Test test = new Test();
-//		Test test1 = new Test(10);
-		Test test2 = new Test("abc");
-//		test.method1();
-//		
-//		test.method2(0);
+	
+	public void method2() {
+		Test test = new Test();
+		test.setA(100);
 	}
 }
 
-class Parent {
-
-	public Parent() {
-		System.out.println("I am parent class default constructor");
-	}
-
-	public Parent(int a) {
-		System.out.println("I am int parameterized constructor from parent class");
-	}
-
-	public Parent(double d) {
-		System.out.println("I am double parameterized constructor from parent class");
-	}
-
-	public void methodA() {
-		System.out.println("I am parent class non-static method");
-	}
-}
 

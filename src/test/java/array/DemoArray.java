@@ -143,8 +143,12 @@ public class DemoArray {
 		}
 	}
 
-	public void intArrayLength(int[] arr) {
-		System.out.println(arr.length);
+	public int intArrayLength(int[] arr) {
+//		System.out.println(arr.length);
+//		return arr.length;
+		int len = arr.length;
+		System.out.println(len);
+		return len;
 	}
 
 	public void cloneIntArray(int arr[]) {
@@ -157,6 +161,11 @@ public class DemoArray {
 		int len[] = { 1, 2, 3, 4, 5 };
 		System.out.println(len.length);
 		return len;
+	}
+	
+	public int[] cloneAnAnIntArray(int[] arr) {
+		int[] ca = arr.clone();
+		return ca;
 	}
 
 	public void getIntArrayFromUser() {
@@ -192,11 +201,11 @@ public class DemoArray {
 		return arr;
 	}
 
-	public int returnSingleValueFromAnIntArray(int index) {
-		int ar[] = new int[3];
-		ar[0] = 10;
-		ar[1] = 20;
-		ar[2] = 30;
+	public int returnSingleValueFromAnIntArray(int[] ar, int index) {
+//		int ar[] = new int[3];
+//		ar[0] = 10;
+//		ar[1] = 20;
+//		ar[2] = 30;
 
 		System.out.println(ar[index]);
 
