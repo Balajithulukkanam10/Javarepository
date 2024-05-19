@@ -26,7 +26,8 @@ public class TestingArrays {
 		
 //		String
 		
-		DemoArray obj = new DemoArray();
+//		DemoArray obj = new DemoArray();
+		PracticeArray obj = new PracticeArray();
 		obj.printIntArrayUsingForEach(ar);
 		
 //		Arrays.sort(ar);

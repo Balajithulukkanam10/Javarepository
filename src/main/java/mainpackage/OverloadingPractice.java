@@ -2,7 +2,7 @@ package mainpackage;
 
 public class OverloadingPractice {
 
-	public void jioCinema() {
+	public static void jioCinema() {
 		System.out.println("Normal method");
 	}
 
@@ -10,21 +10,24 @@ public class OverloadingPractice {
 //		return null;
 //		
 //	}
-	public void jioCinema(String ipl) {
-		System.out.println("parameterized method");
+	public static int jioCinema(String ipl) {
+		String ipl1 = "IPL";
+		System.out.println(ipl1);
+		return 10;
 	}
 
-	public void jioCinema(int year) {
+	public static void jioCinema(int year) {
 		System.out.println("int parameterized method");
 	}
 	
-	public void jioCinema(String ipl, int year) {
+	public static int jioCinema(String ipl, int year) {
 		System.out.println(ipl +" - " + year);
+		return 0;
 	}
 	
 	public static void main(String[] args) {
 		OverloadingPractice obj = new OverloadingPractice();
-		obj.jioCinema("IPL", 2024);
+		obj.jioCinema("IPL2024");
 	
 	}
 }
