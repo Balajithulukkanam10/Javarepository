@@ -19,74 +19,105 @@ import java.util.Arrays;
 public class TestingArrays {
 
 	public static void main(String[] args) {
-		
+		TestingArrays obj = new TestingArrays();
 //		Arrays obj = new Arrays();
-		
-		int ar[] = {10, 50, 30, 20, 40};
-		
+
+		int ar[] = { 10, 50, 30, 20, 40 };
+
 //		String
-		
-//		DemoArray obj = new DemoArray();
-		PracticeArray obj = new PracticeArray();
-		obj.printIntArrayUsingForEach(ar);
-		
+
+//		PracticeArray obj = new PracticeArray();
+//		obj.printIntArrayUsingForEach(ar);
+
 //		Arrays.sort(ar);
 //		obj.printIntArrayUsingForEach(ar);
-		
-		
+
 //		Arrays.sort(ar, 1, 4);
 //		Arrays.sort(ar, 3, 5);
 //		Arrays.sort(ar, 3, 6);
 //		obj.printIntArrayUsingForEach(ar);
-		
-		int ar1[] = {10, 50, 30, 20, 40};
-		int ar2[] = {10, 20, 30, 40, 50};
-		int ar3[] = {10, 20, 30, 40, 50};
-		int ar4[] = {30, 20};
-		int ar5[] = {20, 30, 50};
-		
+
+		int ar1[] = { 10, 50, 30, 20, 40 };
+		int ar2[] = { 10, 20, 30, 40, 50 };
+		int ar3[] = { 10, 20, 30, 40, 50 };
+		int ar4[] = { 30, 20 };
+		int ar5[] = { 20, 30, 50 };
+		obj.findArraysMismatch();
+//		System.out.println("********equals*************");
+//		boolean checkTwoArraysAreEqual = Arrays.equals(ar1, ar2);
+//		System.out.println(checkTwoArraysAreEqual);
+//
+//		System.out.println("********compare*************");
+//		System.out.println(Arrays.compare(ar3, ar2));
+//		System.out.println(Arrays.compare(ar1, ar2));
+//		System.out.println(Arrays.compare(ar4, ar5));
+//
+//		System.out.println("********copyOf*************");
+//		int[] copiedArray = Arrays.copyOf(ar1, 3);
+//		obj.printIntArrayUsingForEach(copiedArray);
+//
+//		System.out.println("********copyOfRange*************");
+//		int[] copiedArrayWithRange = Arrays.copyOfRange(ar1, 1, 4);
+//		obj.printIntArrayUsingForEach(copiedArrayWithRange);
+//
+//		System.out.println("********fill*************");
+//		Arrays.fill(ar1, 100);
+//		obj.printIntArrayUsingForEach(ar1);
+//
+//		System.out.println("********mismatch*************");
+//		System.out.println(Arrays.mismatch(ar1, ar2));
+
+	}
+
+	public void reverseAnArray() {
+
+		int ar[] = { 10, 50, 30, 20, 40 };
+//		50,  40, 30, 20, 10
+
+		for (int i = ar.length - 1; i >= 0; i--) {
+			System.out.println(ar[i]);
+		}
+
+	}
+
+	public void printNormalArray(boolean checkTwoArraysAreEqual) {
+		int arr[] = { 10, 50, 30, 20, 40 };
+		for (int i = arr.length - 1; i >= 0; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+	public void printArraysEqual() {
+		TestingArrays obj1 = new TestingArrays();
+		int ar1[] = { 10, 50, 30, 20, 40 };
+		int ar2[] = { 10, 20, 30, 40, 50 };
+		int ar3[] = { 10, 20, 30, 40, 50 };
+		int ar4[] = { 30, 20 };
+		int ar5[] = { 20, 30, 50 };
+
 		System.out.println("********equals*************");
 		boolean checkTwoArraysAreEqual = Arrays.equals(ar1, ar2);
 		System.out.println(checkTwoArraysAreEqual);
-		
-		
+//		obj1.printNormalArray(checkTwoArraysAreEqual);
+	}
+
+	public void compareTwoArrays() {
+		int ar1[] = { 10, 50, 30, 20, 40 };
+		int ar2[] = { 10, 20, 30, 40, 50 };
+		int ar3[] = { 10, 20, 30, 40, 50 };
+		int ar4[] = { 30, 20 };
+		int ar5[] = { 20, 30, 50 };
 		System.out.println("********compare*************");
-		System.out.println(Arrays.compare(ar3, ar2));
-		System.out.println(Arrays.compare(ar1, ar2));
 		System.out.println(Arrays.compare(ar4, ar5));
-		
-		System.out.println("********copyOf*************");
-		int[] copiedArray = Arrays.copyOf(ar1, 3);
-		obj.printIntArrayUsingForEach(copiedArray);
-		
-		
-		System.out.println("********copyOfRange*************");
-		int[] copiedArrayWithRange = Arrays.copyOfRange(ar1, 1, 4);
-		obj.printIntArrayUsingForEach(copiedArrayWithRange);
-		
-		
-		System.out.println("********fill*************");
-		Arrays.fill(ar1, 100);
-		obj.printIntArrayUsingForEach(ar1);
-		
-		System.out.println("********mismatch*************");
-		System.out.println(Arrays.mismatch(ar1, ar2));
-		
-		
-		
+		System.out.println(Arrays.compare(ar3, ar1));
 	}
-	
-	
-	
-	public void reverseAnArray() {
-
-		int ar[] = {10, 50, 30, 20, 40};
-//		50,  40, 30, 20, 10
-		
-		for(int i = ar.length-1; i>=0; i--) {
-			System.out.println(ar[i]);
-		}
-	
+	public void findArraysMismatch() {
+		int ar2[] = { 10, 20, 30, 40, 50 };
+		int ar3[] = { 10, 20, 30, 40, 50 };
+		int ar4[] = { 30, 20 };
+		int ar5[] = { 20, 30, 50 };
+		System.out.println("**********mismatch*********");
+		System.out.println(Arrays.mismatch(ar4, ar5));
+		System.out.println(Arrays.mismatch(ar2, ar3));
 	}
-
 }

@@ -12,8 +12,9 @@ public class ArrayHomeWork {
 		ar[2]= 30;
 		ar[3]= 20;
 //		Arrays.sort(ar);
-		reverseAnyArray(ar);
+//		reverseAnyArray(ar);
 //		Scanner();
+		PrintNormalArray();
 		
 	}
 	public static void PrintNormalArray() {
