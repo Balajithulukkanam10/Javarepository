@@ -26,13 +26,11 @@ public class TestingArrays {
 		
 //		String
 		
-//		DemoArray obj = new DemoArray();
 		PracticeArray obj = new PracticeArray();
 		obj.printIntArrayUsingForEach(ar);
 		
 //		Arrays.sort(ar);
 //		obj.printIntArrayUsingForEach(ar);
-		
 		
 //		Arrays.sort(ar, 1, 4);
 //		Arrays.sort(ar, 3, 5);
@@ -42,18 +40,20 @@ public class TestingArrays {
 		int ar1[] = {10, 50, 30, 20, 40};
 		int ar2[] = {10, 20, 30, 40, 50};
 		int ar3[] = {10, 20, 30, 40, 50};
-		int ar4[] = {30, 20};
-		int ar5[] = {20, 30, 50};
+		int ar4[] = {30, 20, 100};//{30, 20};
+		int ar5[] = {30, 20, 50};
 		
 		System.out.println("********equals*************");
 		boolean checkTwoArraysAreEqual = Arrays.equals(ar1, ar2);
 		System.out.println(checkTwoArraysAreEqual);
 		
+		System.out.println(Arrays.equals(ar2, ar3));
 		
 		System.out.println("********compare*************");
 		System.out.println(Arrays.compare(ar3, ar2));
 		System.out.println(Arrays.compare(ar1, ar2));
 		System.out.println(Arrays.compare(ar4, ar5));
+		System.out.println(Arrays.compare(ar5, ar4));
 		
 		System.out.println("********copyOf*************");
 		int[] copiedArray = Arrays.copyOf(ar1, 3);
@@ -71,6 +71,7 @@ public class TestingArrays {
 		
 		System.out.println("********mismatch*************");
 		System.out.println(Arrays.mismatch(ar1, ar2));
+		System.out.println(Arrays.mismatch(ar3, ar2));
 		
 		
 		

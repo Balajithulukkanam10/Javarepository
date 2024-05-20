@@ -79,7 +79,7 @@ public class PracticeArray {
 	
 	public void printIntArrayUsingForEach(int[] arrName) {
 		for(int each: arrName) {
-			System.out.println(arrName);
+			System.out.println(each);
 		}
 	}
 	
