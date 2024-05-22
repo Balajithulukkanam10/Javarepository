@@ -543,7 +543,7 @@ str = str1 + str2;
 In SCP, after manipulation
 
 stack 		SCP
-str			SathyaRanjithRanjith ("Sathya" - will be in SCP but no one is looking for him)
+str			SathyaRanjithRanjith ("Sathya" - will be still available in SCP but no one is looking for him)
 str1 		SathyaRanjith
 str2 		Ranjith
 
@@ -984,4 +984,76 @@ getter and setter
 Day 24 - 16/05/2024
 
 Scanner
+
+****************************************************************************
+
+Day 25 - 17/05/2024
+
+array practice
+
+****************************************************************************
+Day 26 - 18/05/2024
+
+array practice
+
+****************************************************************************
+Day 27 - 20/05/2024
+
+Arrays class practice and explanation
+
+Home work: 
+try these methods yourself 
+
+equals
+compare
+mismatch
+copyOf
+copyOfRanga
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+Multi-Dimential array 
+
+Matrix 
+2* 2 - 2 row and 2 column
+
+10 20
+30 40
+
+0,0 - 10
+0,1 - 20
+1,0 - 30
+1,1 - 40
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+String class demo
+
+******************************************************************************
+String practice and explanation
+
+
+"" - empty
+"  " - blank
+"a" 
+"4343"
+"Sathya"
+"fsjkf lkdsdk ld;l";
+"Selenium written on \"Java\" language as well"
+
+==
+
+String str = "abc"; //String litrals 
+String str1 = "abc";
+
+if(str == str1) // false
+if(str.equals(str1)) - true
+
+check given word is present in the sentence
+
+String immutable
+
+
+****************************************************************************
+
 
