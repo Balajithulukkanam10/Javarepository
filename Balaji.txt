@@ -1056,4 +1056,20 @@ String immutable
 
 ****************************************************************************
 
+Day 28 - 29/05/2024
+
+String program practice
+
+StringBuilder and StringBuffer
+
+Wrapper classes
+
+*******************************************************************************
+
+Day 29 - /05/2024
+
+Collections 
+
+Why? 
+
 
