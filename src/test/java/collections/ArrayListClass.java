@@ -84,10 +84,12 @@ public class ArrayListClass {
 		cars.add("Swift");
 		cars.add(null);
 		cars.add(null);
-//		cars.add(2, "BMW"); 
-		
 		System.out.println(cars);
+//		cars.add(2, "BMW"); 
+//		System.out.println(cars);
+
 		System.out.println(cars.get(0));
+//		System.out.println(cars.get(20));
 		System.out.println(cars.size());
 		
 		System.out.println("****for loop****");
@@ -100,6 +102,10 @@ public class ArrayListClass {
 			System.out.println(each);
 		}
 		
+		System.out.println("****Contains****");
+		System.out.println(cars.contains("Volvo"));
+		
+		
 		cars.set(3, "BENZ");
 		System.out.println(cars);
 		
@@ -109,8 +115,16 @@ public class ArrayListClass {
 //		cars.clear();
 //		System.out.println(cars);
 		
-//		Collections.sort(cars); 
-//		System.out.println(cars);
+		System.out.println("*********Sorting***********");
+		ArrayList<String> nullCollection = new ArrayList<String>();
+		nullCollection.add(null);
+		cars.removeAll(nullCollection);
+		System.out.println("***********After removing null values************");
+		System.out.println(cars);
+		System.out.println("*************After sorting************");
+		Collections.sort(cars); 
+		System.out.println(cars);
+		System.out.println("***********************");
 		
 		ArrayList<String> cars1 = (ArrayList<String>)cars.clone(); 
 		System.out.println(cars1);

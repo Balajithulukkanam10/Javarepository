@@ -115,31 +115,82 @@
 
 package collections;
 
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class ArrayListDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
+		
+//		PrintStream PS = new PrintStream("Hello");
+//		PS.println("Hello");
+		System.out.println("Hello");
+		
+		
 		// TODO Auto-generated method stub
 		ArrayList<Integer> a= new ArrayList<Integer>(10);
 		System.out.println(a.size());
 		a.add(10);
 		a.add(20);
 		a.add(30);
-		System.out.println(a);
-		System.out.println(a.size());
 		
-		for(int i = 0; i<a.size();i++) {
-			System.out.println(a. get(i));
+		for(Integer each: a) {
+			System.out.println(each);
 		}
 		
 		Iterator<Integer> ite = a.iterator();
-		while(ite.hasNext()) 
-		{
-			System.out.println(ite.next());
+		
+		System.out.println(ite.hasNext());
+		System.out.println(ite.next());
+		
+		System.out.println(ite.hasNext());
+		System.out.println(ite.next());
+		
+		System.out.println(ite.hasNext());
+		System.out.println(ite.next());
+		
+//		System.out.println(ite.hasNext());
+//		System.out.println(ite.next());
+		
+//		while(ite.hasNext()) {
+//			System.out.println(ite.next());
+//		}
+		
+		Iterator<Integer> newIterator = a.iterator();
+		while(newIterator.hasNext()) {
+			System.out.println(newIterator.next());
 		}
 		
+		
+		Iterator<Integer> otherIte = a.iterator();
+		otherIte.forEachRemaining(eachA -> System.out.println(eachA));
+		
+		System.out.println("List Iterator");
+		
+		ListIterator<Integer> listIte = a.listIterator();
+		
+//		while(listIte.hasNext()) {
+//			System.out.println(listIte.next());
+//		}
+//		
+//		while(listIte.hasPrevious()) {
+//			System.out.println(listIte.previous());
+//		}
+		
+		System.out.println("**********************");
+		int temp = 1;
+		while(listIte.hasNext()) {
+			System.out.println("****"+listIte.next());
+			
+			if(temp == 2) {
+				System.out.println("&&&&"+ listIte.previous());
+			}
+			
+			temp = temp ++;
+		}
 	}
 
 }

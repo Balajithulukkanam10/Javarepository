@@ -40,14 +40,25 @@ public class HashMapClass {
 
 		System.out.println(marks);
 
-		System.out.println("******* Iterating key and values using foreach loop*****");
+		/*
+		
 		Map<String, Integer> marks10 = new HashMap<String, Integer>();
 		marks10.putAll(marks);
+		System.out.println(marks10);
 		
 		
+		System.out.println("******* Iterating key and values using foreach loop*****");
+
 		Set<String> keys = marks.keySet();
-		for(String each: keys) {
-			System.out.println(each);
+		System.out.println(keys);
+		for(String each:keys) {
+//			System.out.println(each);
+			if(each != null && each.contains("Bio") ) {
+				System.out.println("Hello "+ each);
+			}
+			else
+				System.out.println(each);
+			
 		}
 		
 		Collection<Integer> values = marks.values();
@@ -55,13 +66,26 @@ public class HashMapClass {
 			System.out.println(each);
 		}
 		
-//		for (Map.Entry<String, Integer> entry1 : marks10.entrySet()) {
-//			System.out.println(entry1.getKey());
-//			System.out.println(entry1.getValue());
-//		}	
 		
-//		HashMapClass obj = new HashMapClass();
-//		obj.mapPractice();
+		Set<Map.Entry<String, Integer>>  entry = marks.entrySet();
+		for(Map.Entry<String, Integer> each: entry) {
+//			System.out.println(each.getKey());
+//			System.out.println(each.getValue());
+			System.out.println(each.getKey()+ ": "+each.getValue());
+		}
+		
+		*/
+		
+		Set<Map.Entry<String, Integer>>  entry1 = marks.entrySet();
+		Iterator<Entry<String, Integer>>  ite = entry1.iterator();
+		while(ite.hasNext()) {
+//			System.out.println(ite.next());
+			Entry<String, Integer> entry2 = ite.next();
+			System.out.println(entry2.getKey());
+			System.out.println(entry2.getValue());
+		}
+		
+		
 
 	}
 
@@ -224,6 +248,8 @@ public class HashMapClass {
 		
 		System.out.println("********* foreach() method ***");
 		marks.forEach((a, b) -> System.out.println(a + ":" + b));
+		
+		
 
 	}
 }

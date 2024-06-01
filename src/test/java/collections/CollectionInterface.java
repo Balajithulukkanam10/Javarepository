@@ -166,6 +166,8 @@ public class CollectionInterface  {
 	
 //	Collections
 	
-	//HashMap
+//	HashMap
+	
+//	Map
 
 }
