@@ -1088,5 +1088,6 @@ Home work
 1. How to read a property file using Java
 2. How to read a text file using Java
 3. How to read a excel using Java (apache poi and fillo api)
+4. How to create a file/folder using Java
 
-
+***********************************************************************************
